@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "eventName": "ponniyin selvan",
+      "eventDescription": "second part",
+      "venue": "munich",
+      "ticketPrice": 20,
+      "eventDuration": 3,
+      "eventDate": "2023-04-13T22:00:00.000Z",
+      "image": "C:\\fakepath\\ponniyin selvan.jpg",
+      "id": 2
+    },
+    {
+      "eventName": "pathu thala",
+      "eventDescription": "simbu film",
+      "venue": "bamberg",
+      "ticketPrice": 20,
+      "eventDuration": 3,
+      "eventDate": "2023-04-18T22:00:00.000Z",
+      "image": "C:\\fakepath\\ponniyin selvan.jpg",
+      "id": 4
+    },
+    {
+      "eventName": "sfds",
+      "eventDescription": "dgf",
+      "venue": "fdg",
+      "ticketPrice": 24,
+      "eventDuration": 3,
+      "eventDate": "2023-04-25T22:00:00.000Z",
+      "image": "C:\\fakepath\\unite.jpg",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
