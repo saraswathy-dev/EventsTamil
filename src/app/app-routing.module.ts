@@ -1,28 +1,28 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultComponent } from './layouts/default/default.component';
+
 import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { PostsComponent } from './modules/posts/posts.component';
 
+import { HomeComponent } from './user/pages/home/home.component';
+import { EventComponent } from './user/pages/event/event.component';
+import { ContactComponent } from './user/pages/contact/contact.component';
+import { EventBookingComponent } from './user/pages/event-booking/event-booking.component';
+
 const routes: Routes = [
- {
-  path:"",
-  component:DefaultComponent,
-  children:[{
-    path:"",
-    component:DashboardComponent
+  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'event', component: EventComponent },
+  { path: 'eventpage/:id', component: EventBookingComponent },
+  { path: 'contact', component: ContactComponent },
 
-  },
-  {path:"posts",
-  component:PostsComponent,
-  },]
- },
- 
-
+  { path: 'admin', component: DashboardComponent },
+  { path: 'posts', component: PostsComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

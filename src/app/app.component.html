@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<app-header (toggleSideBarForme)="sidebarToggler($event)"></app-header>
+
+<mat-drawer-container class="example-container">
+  <!-- adminsidenav -->
+  <mat-drawer mode="side" [opened]="sidebarOpen">
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+  <!-- homesidenav -->
+  <!-- <mat-drawer mode="side" [opened]="sidebarOpen">
+    <app-home-side-nav></app-home-side-nav>
+  </mat-drawer> -->
+  <!-- maincontent -->
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+<app-footer></app-footer>

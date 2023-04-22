@@ -5,7 +5,7 @@
       "eventDescription": "second part",
       "venue": "munich",
       "ticketPrice": 20,
-      "eventDuration": 3,
+      "eventDuration": 8,
       "eventDate": "2023-04-13T22:00:00.000Z",
       "image": "C:\\fakepath\\ponniyin selvan.jpg",
       "id": 2
@@ -29,6 +29,86 @@
       "eventDate": "2023-04-25T22:00:00.000Z",
       "image": "C:\\fakepath\\unite.jpg",
       "id": 6
+    },
+    {
+      "eventName": "jnbkn",
+      "eventDescription": "fzhg",
+      "venue": "jkil",
+      "ticketPrice": 25,
+      "eventDuration": 3,
+      "eventDate": "2023-04-26T22:00:00.000Z",
+      "image": "C:\\fakepath\\download.jfif",
+      "id": 8
+    },
+    {
+      "eventName": "scdf",
+      "eventDescription": "sgfrhg",
+      "venue": "gfhgfj",
+      "ticketPrice": 23,
+      "eventDuration": 4,
+      "eventDate": "2023-04-25T22:00:00.000Z",
+      "image": "C:\\fakepath\\My project.jpg",
+      "id": 10
+    },
+    {
+      "eventName": "dsfdg",
+      "eventDescription": "fdgth",
+      "venue": "th",
+      "ticketPrice": 23,
+      "eventDuration": 4,
+      "eventDate": "2023-04-24T22:00:00.000Z",
+      "image": "C:\\fakepath\\ponniyin selvan.jpg",
+      "id": 12
+    },
+    {
+      "eventName": "asf",
+      "eventDescription": "dg",
+      "venue": "dsgf",
+      "ticketPrice": 12,
+      "eventDuration": 3,
+      "eventDate": "2023-04-16T22:00:00.000Z",
+      "image": "C:\\fakepath\\pathu.jpg",
+      "id": 14
+    },
+    {
+      "eventName": "dcgvfd",
+      "eventDescription": "fdhgfh",
+      "venue": "hfgh",
+      "ticketPrice": 12,
+      "eventDuration": 3,
+      "eventDate": "2023-04-18T22:00:00.000Z",
+      "image": "C:\\fakepath\\tu jhoothi.jfif",
+      "id": 16
+    },
+    {
+      "eventName": "dg",
+      "eventDescription": "hgj",
+      "venue": "hkj",
+      "ticketPrice": 2,
+      "eventDuration": 5,
+      "eventDate": "2023-04-24T22:00:00.000Z",
+      "image": "C:\\fakepath\\ponniyin selvan.jpg",
+      "id": 19
+    },
+    {
+      "eventName": "safds",
+      "eventDescription": "dfgfd",
+      "venue": "dhfgf",
+      "ticketPrice": 12,
+      "eventDuration": 56,
+      "eventDate": "2023-04-24T22:00:00.000Z",
+      "image": "C:\\fakepath\\My project.jpg",
+      "id": 20
+    },
+    {
+      "eventName": "abc",
+      "eventDescription": "sfds",
+      "venue": "fd",
+      "ticketPrice": 12,
+      "eventDuration": 56,
+      "eventDate": "2023-04-26T22:00:00.000Z",
+      "image": "C:\\fakepath\\pathu.jpg",
+      "id": 21
     }
   ],
   "comments": [],

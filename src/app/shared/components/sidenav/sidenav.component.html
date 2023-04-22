@@ -8,12 +8,84 @@
   </div>
   <mat-divider></mat-divider>
   <h2 class="sub-head" mat-subheader>Pages</h2>
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/"
-    >Dashboard</a
-  >
-  <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts"
-    >Posts</a
-  >
+
+  <ng-container *ngIf="roleAdmin">
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="admin/dashboard"
+      >Dashboard</a
+    >
+    <a
+      mat-list-item
+      routerLinkActive="list-item-active"
+      routerLink="admin/posts"
+      >Posts</a
+    >
+  </ng-container>
+  <ng-container *ngIf="!roleAdmin">
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/home"
+      >Home</a
+    >
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/event"
+      >Event</a
+    >
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/contact"
+      >contact</a
+    >
+  </ng-container>
+  <!-- <ng-template #event> -->
+
+  <!-- 
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/event"
+      >Event</a
+    >
+  </ng-template>
+
+  <ng-template #home> -->
+  <!-- event page content -->
+  <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/home"
+      >Home</a
+    >
+  </ng-template>
+
+  <ng-template #contact> -->
+  <!-- Contact page content -->
+
+  <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/contact"
+      >contact</a
+    >
+  </ng-template> -->
+
+  <!-- <ng-template #admin> -->
+  <!-- Contact page content -->
+
+  <!-- <a mat-list-item routerLinkActive="list-item-active" routerLink="/dashboard"
+      >dashboard</a
+    >
+    <a mat-list-item routerLinkActive="list-item-active" routerLink="/posts"
+      >posts</a
+    >
+  </ng-template>  -->
+
+  <!-- <div [ngSwitch]="url">
+    <ng-template [ngSwitchCase]="home" [ngIf]="home">
+      <ng-container *ngTemplateOutlet="home"></ng-container>
+    </ng-template>
+    <ng-template [ngSwitchCase]="event" [ngIf]="event">
+      <ng-container *ngTemplateOutlet="event"></ng-container>
+    </ng-template>
+    <ng-template [ngSwitchCase]="contact" [ngIf]="contact">
+      <ng-container *ngTemplateOutlet="contact"></ng-container>
+    </ng-template>
+    <ng-template [ngSwitchCase]="'admin'" [ngIf]="admin">
+      <ng-container *ngTemplateOutlet="admin"></ng-container>
+    </ng-template> -->
+  <!-- <ng-template [ngSwitchCase]="posts" [ngIf]="posts">
+      <ng-container *ngTemplateOutlet="contact"></ng-container>
+    </ng-template> -->
+  <!-- </div> -->
+
   <mat-divider></mat-divider>
   <h2 class="sub-head" mat-subheader>Tools</h2>
   <a mat-list-item routerLinkActive="list-item-active" routerLink="/contacts"
