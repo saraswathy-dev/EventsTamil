@@ -1,5 +1,5 @@
 /* foodItem */
-/* .foodItem{
+.foodItem{
     padding-top: 10px;
     background-color: aliceblue;
 }
@@ -9,8 +9,7 @@
     padding: 10px;
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
-} */
-
+}
  .card{
   margin-bottom: 20px;
 }

@@ -2,7 +2,8 @@
   <div class="row">
     <h2>Recent Movies</h2>
     <div class="col-sm-3" *ngFor="let fd of dataSource; index as i">
-      <div class="card" style="width: 18rem" *ngIf="i <= 7">
+      <div class="card" style="width: 18rem" *ngIf="i <= 9">
+        {{ fd.id }}
         <img
           src="../../../../assets/movie.jpg"
           class="card-img-top"
@@ -15,7 +16,7 @@
             {{ fd.eventDescription }}
           </p>
 
-          <a routerLink="/eventpage/{{ fd.id }}" class="btn btn-primary"
+          <a routerLink="/eventpage/:{{ fd.id }}" class="btn btn-primary"
             >BUY NOW &nbsp;<i class="bi bi-bag"></i
           ></a>
         </div>

@@ -8,7 +8,6 @@ import { HomeComponent } from './user/pages/home/home.component';
 import { EventComponent } from './user/pages/event/event.component';
 import { ContactComponent } from './user/pages/contact/contact.component';
 import { EventBookingComponent } from './user/pages/event-booking/event-booking.component';
-import { ModulesComponent } from './modules/modules.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -17,16 +16,9 @@ const routes: Routes = [
   { path: 'eventpage/:id', component: EventBookingComponent },
   { path: 'contact', component: ContactComponent },
 
-  {
-    path: 'admin',
-    component: PostsComponent,
-  },
-
-  //   children: [
-  //     { path: 'posts', component: PostsComponent },
-  //     { path: 'dashboard', component: DashboardComponent },
-  //   ],
-  // },
+  { path: 'admin', component: DashboardComponent },
+  { path: 'posts', component: PostsComponent },
+  { path: 'dashboard', component: DashboardComponent },
 ];
 
 @NgModule({

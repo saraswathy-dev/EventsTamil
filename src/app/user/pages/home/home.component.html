@@ -136,38 +136,12 @@
             </button>
           </div>
         </div>
-        <div class="container-sm recent">
-          <div class="row">
-            <h2 class="mt-2">Recent Movies</h2>
-            <div class="col-sm-3" *ngFor="let fd of dataSource; index as i">
-              <div class="card" style="width: 18rem" *ngIf="i <= 3">
-                <img
-                  src="../../../../assets/movie.jpg"
-                  class="card-img-top"
-                  alt="{{ fd.eventName }}"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">{{ fd.eventName }}</h5>
-                  <p>{{ fd.ticketPrice }}</p>
-                  <p class="card-text">
-                    {{ fd.eventDescription }}
-                  </p>
-
-                  <a routerLink="/eventpage/{{ fd.id }}" class="btn btn-primary"
-                    >BUY NOW &nbsp;<i class="bi bi-bag"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <!-- recommended movies -->
-        <!-- <div class="container-md">
+        <div class="container-md">
           <h4 class="text-centered mt-5 ms-5">Recommended Movies</h4>
 
           <!-- card group -->
-        <!-- <div class="row g-4 mb-5 mt-2">
+          <div class="row g-4 mb-5 mt-2">
             <div class="col-sm-2"></div>
             <div class="col-sm-3">
               <div class="card h-80 w-60">
@@ -218,7 +192,7 @@
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </body>
