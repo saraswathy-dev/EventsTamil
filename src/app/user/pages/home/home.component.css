@@ -18,7 +18,7 @@ img{
 }
 
 /* card */
-.card{
+/* .card{
     margin-bottom: 20px;
 }
   
@@ -41,4 +41,37 @@ text-align: center;
  }
  .card-text{
     text-align: center;
- }
+ } */
+ .card{
+    margin-bottom: 20px;
+  }
+  
+  .card img{
+  width:100%;
+      height: 200px;
+  }
+  .card-title{
+      font-weight: bold;
+  }
+  .viewmore{
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      padding: 5px 5px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 5px;
+     
+  }
+  .more{
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+  @media only screen and (max-width:768px){
+      .foodItem{
+          text-align: center;
+      }
+      .card {
+          text-align: center;
+         margin-right: 1px;
+      }
+  }

@@ -23,8 +23,8 @@ export class SidenavComponent implements OnInit {
     router.events.subscribe((event: Event) => {
       if (event instanceof NavigationStart) {
         // Navigation started.
-        this.roleAdmin = event.url == '/admin' ? true : false;
-        console.log(event.url);
+        this.roleAdmin = event.url == 'admin' ? true : false;
+        console.log('url', event.url);
       }
 
       // // else {

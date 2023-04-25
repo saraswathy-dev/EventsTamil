@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { async } from 'rxjs';
 import { ApiService } from 'src/app/services/api.service';
+import { PostsComponent } from 'src/app/modules/posts/posts.component';
 
 @Component({
   selector: 'app-event-booking',
@@ -10,31 +12,36 @@ import { ApiService } from 'src/app/services/api.service';
 export class EventBookingComponent implements OnInit {
   activatedId: any;
   dataSource: Array<any> = [];
-  eventData: any;
+  extractedId: Array<any> = [];
+  menuData: any;
+
   constructor(private activeRoute: ActivatedRoute, private api: ApiService) {}
-  getAllEvents() {
-    this.api.getEvent().subscribe({
-      next: (res) => {
-        this.dataSource = res;
-        console.log('response', this.dataSource);
-      },
-      error: () => {
-        alert('error  while getting data');
-      },
-    });
-  }
-  ngOnInit(): void {
-    this.getAllEvents();
-
+  // getAllEvents() {
+  //   return new Promise((_resolve, reject): void => {
+  //     this.api.getEvent().subscribe({
+  //       next: (res) => {
+  //         this.dataSource = res;
+  //         console.log('response', this.dataSource);
+  //       },
+  //       error: () => {
+  //         alert('error  while getting data');
+  //       },
+  //     });
+  //   });
+  // }
+  ngOnInit() {
     this.activatedId = this.activeRoute.snapshot.paramMap.get('id');
+    this.api.getEvent().subscribe((response) => {
+      this.dataSource = response;
+    });
+    console.log(this.dataSource);
 
-    console.log('id:', this.activatedId);
     setTimeout(() => {
-      if (this.activatedId) {
-        this.eventData = this.dataSource.filter((value) => {
-          return this.activatedId == value.id;
-        });
-      }
-    }, 10000);
+      console.log(this.dataSource);
+      console.log('activated', this.activatedId);
+
+      this.menuData = this.dataSource.find((obj) => obj.id == this.activatedId);
+      console.log(this.menuData);
+    }, 1000);
   }
 }

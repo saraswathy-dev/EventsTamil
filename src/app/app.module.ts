@@ -37,6 +37,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { SidenavComponent } from './shared/components/sidenav/sidenav.component';
 import { HomeSideNavComponent } from './shared/components/home-side-nav/home-side-nav.component';
 import { EventBookingComponent } from './user/pages/event-booking/event-booking.component';
+import { ModulesComponent } from './modules/modules.component';
+import { ModulesRoutingModule } from './modules/modules-routing.module';
 
 @NgModule({
   declarations: [
@@ -46,6 +48,7 @@ import { EventBookingComponent } from './user/pages/event-booking/event-booking.
     SidenavComponent,
     HomeSideNavComponent,
     EventBookingComponent,
+    ModulesComponent,
   ],
   imports: [
     BrowserModule,
@@ -80,6 +83,7 @@ import { EventBookingComponent } from './user/pages/event-booking/event-booking.
     AppRoutingModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    ModulesRoutingModule,
   ],
 
   providers: [],

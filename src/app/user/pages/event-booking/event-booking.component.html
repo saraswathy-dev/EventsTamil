@@ -1,12 +1,14 @@
-<div class="container-sm menuPageID">
-  <a routerLink="../../menu">Back</a>
+<div class="container-sm menuPageID" *ngIf="dataSource.length > 0">
+  <a routerLink="../../event"
+    ><button class="btn btn-secondary">Back</button></a
+  >
   <div class="row">
     <!-- selected order -->
     <div class="col-lg-6">
-      <img src="{{ eventData.image }}" width="100%" alt="" />
-      <h2>{{ eventData.eventName }}</h2>
-      <p>{{ eventData.eventDescription }}</p>
-      <p>{{ eventData.TicketPrice }}</p>
+      <img src="../../../../assets/movie.jpg" width="100%" alt="" />
+      <h2>{{ menuData.eventName }}</h2>
+      <p>{{ menuData.eventDescription }}</p>
+      <p>{{ menuData.ticketPrice }}</p>
     </div>
 
     <!-- details  -->
